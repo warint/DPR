@@ -1,2 +1,2 @@
 # DPR
-Data Pipeline with R : Exercices 
+Data Pipeline with R : Exercises 
