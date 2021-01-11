@@ -1,6 +1,6 @@
 # Data Pipeline with R : Exercises 
 
-The purpose of this Github repository is to make available the data to complete the exercises in the book ["Data Pipeline with R"](https://warin.ca/dpr/){target="_blank"} 
+The purpose of this Github repository is to make available the data to complete the exercises in the book ["Data Pipeline with R"](https://warin.ca/dpr/) 
 
 In this book, you will learn some fundamentals about coding with R, its grammar, its vocabulary, as well as some of the best practices in dealing with data, doing some data wrangling, and visualizing data on graphs and dashboards.
 
@@ -12,7 +12,7 @@ The goal is to make you comfortable with the new technologies used in data scien
 
 To get familiar with Markdown, you must reproduce the report in the folder named *chapter2*, it needs to be perfectly identical. Make sure that you respect the different levels of headings and the typography. Do not forget to add images and the html link. 
 
-We recommend you to review your courses with the [Chapter 2](https://warin.ca/dpr/markdown.html){target="_blank"}  and consult the R Markdown [Cheat Sheet](https://rstudio.com/wp-content/uploads/2015/02/rmarkdown-cheatsheet.pdf)
+We recommend you to review your courses with the [Chapter 2](https://warin.ca/dpr/markdown.html) and consult the R Markdown [Cheat Sheet](https://rstudio.com/wp-content/uploads/2015/02/rmarkdown-cheatsheet.pdf)
 
 ## Chapter 6-9: Data Wrangling
 
