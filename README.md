@@ -8,32 +8,25 @@ You will thus learn how to use R with data and how to produce your desired outpu
 
 The goal is to make you comfortable with the new technologies used in data science. It is seems maybe overwhelming, but with just R, Markdown and Git, you will build your data pipeline. This pipeline will serve as the basis of any further analysis.
 
-## Chapter 2: Markdown Exercise
+## Chapter 2: Markdown
 
-To get familiar with Markdown, you must reproduce the report in the folder named *chapter2*, it needs to be perfectly identical. Make sure that you respect the different levels of headings and the typography. Do not forget to add images and the html link. 
+To get familiar with Markdown, you must reproduce this [report](https://warin.ca/sessions/exercises/dpr/chap2/chap2-markdown.html). A copy and images are also available in the [chapter2](https://github.com/warint/DPR/tree/main/chapter2) folder. It needs to be perfectly identical. Make sure that you respect the different levels of headings and the typography. Do not forget to add images and the html link.
 
-We recommend you to review your courses with the [Chapter 2](https://warin.ca/dpr/markdown.html) and consult the R Markdown [Cheat Sheet](https://rstudio.com/wp-content/uploads/2015/02/rmarkdown-cheatsheet.pdf)
+## Chapter4: Managing References
+
+To the report done in Chapter 2, let's add references! Get the bib file in the [chapter4](https://github.com/warint/DPR/tree/main/chapter4) folder. This is what the [report with references](https://warin.ca/sessions/exercises/dpr/chap4/chap4-managing-references.html) should look like.
 
 ## Chapter 6-9: Data Wrangling
 
-For this exercise, you will have to do some data wrangling. Do not hesitate to go back and read chapters 6,7,8 and 9. 
-
-You must clean the chapter9data.csv and combine the locations data set to it. Make sure that you follow the steps explained in the book.
-
-Pay attention, every little detail is important!
-
+This exercise begins in Chapter 6 and continues through Chapter 9. This exercise is therefore divided into 4 parts. For this exercise, you'll work with a csv file available in the [chapter6](https://github.com/warint/DPR/tree/main/chapter6/data) folder.
 
 ## Chapter 10: Data Visualization
 
-You must use the previous data and calculate the mean gdp per country. With the results, you will create a bar chart identical to the one in the exercise. 
+You must use the data available in the [chapter10](https://github.com/warint/DPR/tree/main/chapter10) folder and reproduce the line and bar chart.  
 
-## Chapter 11: Dashboard
+## Chapter 11: Dashboards
 
 You are in charge of organizing a presentation to the board of directors of an international investment firm. They need to decide in which country they want to invest.
 
-We expect you to do:
-
-a dynamic presentation using a flexdashboard
-using for instance GDP and Foreign Direct Investment since at least 1995
-using for instance France as a country
+We expect you to do a dynamic presentation using Flexdashboard. You can find an example [here](https://warin.ca/sessions/exercises/dpr/chap11/chap11-dashboards.html). The data are available in the [chapter11](https://github.com/warint/DPR/tree/main/chapter11) folder.
 
