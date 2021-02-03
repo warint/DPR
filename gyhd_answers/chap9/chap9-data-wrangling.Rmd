@@ -1,0 +1,18 @@
+---
+title: "Chapter 9 - Getting your hands dirty"
+output: html_document
+---
+
+**Getting your hands dirty**
+
+It's time to practice! This exercise begins in Chapter 6 and continues through Chapter 9. This exercise is therefore divided into 4 parts. For this exercise, you'll work with a csv file available on [Github](https://github.com/warint/DPR){target="_blank"} in the *chapter6* folder.
+
+Now, let's begin with the last part of this exercise:
+
+* **Step 6 : Merging datasets**
+
+Join the data frame "locations" to the data frame "gdp3".
+
+```{r, eval=FALSE}
+gdp4 <- left_join(gdp3, locations, c("country"))
+```

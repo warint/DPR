@@ -1,0 +1,20 @@
+---
+title: "Chapter 8 - Getting your hands dirty"
+output: html_document
+---
+
+**Getting your hands dirty**
+
+It's time to practice! This exercise begins in Chapter 6 and continues through Chapter 9. This exercise is therefore divided into 4 parts. For this exercise, you'll work with a csv file available on [Github](https://github.com/warint/DPR){target="_blank"} in the *chapter6* folder.
+
+Now, let's begin with the third part of this exercise:
+
+* **Step 5 : "Lengthens" the data**
+
+You need to "lengthens" (modify from wide to long) the dataframe "gdp2" to get three column: "country", "year", "gdp".
+
+```{r, eval=FALSE}
+library(tidyr)
+gdp3 <- gdp2 %>% 
+  pivot_longer(!c(country), names_to = "year", values_to = "gdp")
+```

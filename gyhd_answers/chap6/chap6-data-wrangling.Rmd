@@ -1,0 +1,30 @@
+---
+title: "Chapter 6 - Getting your hands dirty"
+output: html_document
+---
+
+**Getting your hands dirty**
+
+It's time to practice! This exercise begins in Chapter 6 and continues through Chapter 9. This exercise is therefore divided into 4 parts. For this exercise, you'll work with a csv file available on [Github](https://github.com/warint/DPR){target="_blank"} in the *chapter6* folder.
+
+Let's begin with the first part of this exercise!
+
+* **Step 1 : Import via a csv**
+
+Import the csv file called "chapter6data.csv".
+
+```{r}
+library(readr)
+gdp <- read_csv("./chapter6data.csv")
+```
+
+* **Step 2 : Import via a gsheet** 
+
+Import a dataset containing longitude and latitude from this gsheet: <https://docs.google.com/spreadsheets/d/1nehKEBKTQx11LZuo5ZJFKTVS0p5y1ysMPSOSX_m8dS8/edit?usp=sharing>
+
+```{r}
+library(gsheet)
+locations <- gsheet2tbl("https://docs.google.com/spreadsheets/d/1nehKEBKTQx11LZuo5ZJFKTVS0p5y1ysMPSOSX_m8dS8/edit?usp=sharing")
+```
+
+

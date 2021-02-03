@@ -1,0 +1,68 @@
+---
+title: "Chapter 10 - Getting your hands dirty"
+output: html_document
+---
+
+**Getting your hands dirty**
+
+You must use the data available on [Github](https://github.com/warint/DPR/tree/main/chapter10){target="_blank"} in Chapter 10 and reproduce the following line and bar chart. 
+
+* **Step1 : Import data**
+
+You need to import `chapter10data.csv` to do this exercise.
+
+```{r, eval = FALSE}
+library(readr)
+gdp5 <- read_csv("chapter10data.csv")
+```
+
+* **Step 2 : Create a line chart** 
+
+Recreate the following line chart.
+
+![](./images/chapter10-linechart.png)
+
+```{r, eval=FALSE}
+library(ggplot2)
+ggplot(gdp5, aes(x=year, y=gdp, color = country)) + 
+  geom_line(size = 1) +
+  xlab("Years") +
+  ylab("Gross domestic product")  +
+  labs(color = "Countries")  +  
+  theme_minimal() +
+  scale_color_brewer(direction = -1) + 
+  geom_point(size = 1.5) 
+
+ggsave("./images/chapter10-linechart.png", dpi = 1200)
+```
+
+* **Step 3 : Subset the data** 
+
+Filter the data to only keep the year 2017.
+
+```{r, eval=FALSE}
+library(dplyr)
+gdp6 <- filter(gdp5, year == 2017)
+```
+
+* **Step 4 : Create a bar chart** 
+
+Recreate the following bar chart.
+
+![](./images/chapter10-linechart.png)
+
+```{r}
+library(ggplot2)
+ggplot(gdp6, aes(x=country, y=gdp, fill = country)) + 
+  geom_bar(stat = "identity") +
+  xlab("") +
+  ylab("Gross domestic product")  +
+  labs(color = "Countries")  +  
+  theme_minimal() +
+  scale_fill_brewer(direction = 1)
+
+ggsave("./images/chapter10-barchart.png", dpi = 1200)
+```
+
+
+

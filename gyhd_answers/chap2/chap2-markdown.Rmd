@@ -1,0 +1,55 @@
+---
+title: "The Global Competitiveness Report 2019"
+author: "World Economic Forum"
+date: "11/01/2021"
+output:
+  html_document:
+    toc: true
+    number_sections: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Introduction
+
+In the long run, a country’s economic fortunes are the result of proactive choices. The [Global Competitiveness Index 4.0](http://www3.weforum.org/docs/WEF_TheGlobalCompetitivenessReport2019.pdf) provides stakeholders with a detailed map of the factors and attributes that drive productivity, growth and human development. By systematically measuring these intertwined and complex factors across countries and over time, the GCI offers direction for policy intervention.
+
+## Global Findings and Implications
+
+### Enhancing competitiveness is still key for improving living standards
+
+Sustained economic growth remains a critical pathway out of poverty and a core driver of human development. There is overwhelming evidence that growth has been the most effective way to lift people out of poverty and improve their quality of life. For least-developed countries (LDCs) and emerging countries, economic growth is critical for expanding education, health, nutrition and survival across populations.
+
+### The global economy is ill-prepared for a downturn after a lost decade for productivity-enhancing measures
+
+As the shadow of the Great Recession looms large, the global economy is predicted to be heading for a slowdown. Over the past decade, growth in advanced economies has been anaemic. Many emerging economies—including Argentina, India, Brazil, Russia and China—are experiencing some slowdown or stagnation. In least-developed economies, growth remains well below potential and highly volatile. Although several factors explain this lacklustre performance, persistent weaknesses in the drivers of productivity growth, highlighted by the GCI, are among the principal culprits.
+
+Productivity growth started slowing down well before the financial crisis. Between 2000 and 2007, total factor productivity (TFP) annual growth averaged just 1% in advanced economies and 2.8% in emerging and developing economies. TFP then plummeted during the crisis. Between 2011 and 2016, TFP grew by 0.3% in advanced economies and 1.3% in emerging and developing economies. The financial crisis may actually have contributed to this deceleration through “productivity hysteresis” – the long-lasting delayed effects of investments being undermined by uncertainty, low aggregate demand and tighter credit conditions. Furthermore, beyond strengthening financial system regulations, many of the structural reforms designed to revive productivity that were promised by policy-makers in the heat of the crisis did not materialize.
+
+The 2019 results of the GCI 4.0 reveal the size of the deficit in global competitiveness measures. The average GCI score across the 141 economies studied is 60.7, measured on a scale of 0 to 100, where 100 is the “frontier”, an ideal—and hypothetical—situation where a country achieves the perfect score on every component of the index. In other words, the global competitiveness gap—measured as the distance to the frontier—stands at almost 40 points (Figure 1).
+
+![Figure 1: The state of global competitiveness in 2019](./images/fig1.png)
+
+# Country Analysis
+
+This section features regional trends and selected country analysis from the 2019 edition of the Global Competitiveness Index 4.0. Combining the GCI scores at a regional level reveals significant differences in both median competitiveness levels across regions as well as dispersion of performances within regions. 
+
+Overall, the results show that East Asia and the Pacific (17 countries) achieves the highest median score (73.9) among all regions, followed closely by Europe and North America (70.9, based on 39 countries). However, within the East Asia and the Pacific region the competitiveness gap between the best and worst performers is significantly larger (34.7) than in Europe and North America (28.9). This shows that, while many countries in East Asia and the Pacific have come a long way to bring their competitiveness up to a high level, there are a few that need to progress faster to bridge their gaps. For instance, comparing the lowest performers in East Asia and the Pacific and Europe and North America, Lao PDR’s score (50.1) remains about 5 points lower than that of Bosnia and Herzegovina (54.7). The Middle East & North Africa, Latin America and the Caribbean, and Sub-Saharan Africa present similar levels of dispersion in competitiveness performance (Figure 2).
+
+![Figure 2: Competitiveness gap within regions](./images/fig2.png)
+
+## Selected country commentaries
+
+The following section provides an overview of selected economies;
+
+* **Canada** is *14th* globally, losing two places and 0.3 points since the 2018 assessment. 
+* **France** is up two notches over 2018 and now ranks *15th*.
+* **Japan** ranks *sixth* overall, down one notch over 2018. 
+
+# Conclusion
+
+The Global Competitiveness Index identifies and assesses the factors that underpin the process of economic growth and human development. It highlights the necessity of addressing the spillover effects and externalities, positive and negative, intended or unintended, of a policy or strategy beyond the direct objective it pursues. The GCI encourages the application of systems thinking, an approach that leaders must adopt in order to apprehend and address today’s complex global challenges. By conceiving of the economy as one of many interacting and interdependent parts that belong to a vast system, policy-makers have an opportunity to develop holistic solutions and strategies.
+
+

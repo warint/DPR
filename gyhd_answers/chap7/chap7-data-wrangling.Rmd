@@ -1,0 +1,28 @@
+---
+title: "Chapter 7 - Getting your hands dirty"
+output: html_document
+---
+
+**Getting your hands dirty**
+
+It's time to practice! This exercise begins in Chapter 6 and continues through Chapter 9. This exercise is therefore divided into 4 parts. For this exercise, you'll work with a csv file available on [Github](https://github.com/warint/DPR){target="_blank"} in the *chapter6* folder.
+
+Now, let's begin with the second part of this exercise:
+
+* **Step 3 : Delete the column**
+
+Delete the column "X1".
+
+```{r, eval=FALSE}
+gdp$X1 <- NULL
+```
+
+* **Step 4 : Filter the data**
+
+Filter the data to only keep the following countries: "United States", "Canada", "Japan", "Belgium" and "France".
+
+```{r, eval=FALSE}
+library(dplyr)
+gdp2 <- filter(gdp, country == "United States" | country == "Canada" | country == "Japan" | country == "Belgium" | country == "France")
+```
+

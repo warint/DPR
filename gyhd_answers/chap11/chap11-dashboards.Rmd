@@ -1,0 +1,93 @@
+---
+title: "France Economic Report"
+output: 
+  flexdashboard::flex_dashboard:
+    orientation: rows
+    social: menu
+    theme: lumen
+    vertical_layout: fill
+---
+
+```{r setup, include=FALSE}
+library(flexdashboard)
+library(ggplot2)
+library(readr)
+library(WDI)
+library(dplyr)
+library(stats)
+library(visreg)
+library(RColorBrewer)
+library(stargazer)
+library(kableExtra)
+```
+
+```{r, echo=FALSE}
+gdpFdiLabor <- read_csv("./data/chapter11data.csv")
+```
+
+Row {data-height=150}
+-------------------------------------
+
+### 
+
+```{r, echo=FALSE}
+france <- map_data("world", region = "France")
+ggplot(data=france, aes(x = long, y = lat, group = group)) +
+  geom_polygon(fill = "white", color="black")+
+  coord_fixed(1.4) + 
+  theme_void()
+```
+
+### Gross Domestic Product (Billions USD) in 2017 
+
+```{r}
+valueBox(2860, icon = "fa-euro-sign", color = "success")
+```
+
+### Foreign Direct Invesment (Billions USD) in 2017
+
+```{r}
+valueBox(37, icon = "fa-arrow-circle-up", color = "info")
+```
+
+### Labor Force (Millions) in 2017
+
+```{r}
+valueBox(30, icon = "fa-user-tie", color = "primary")
+```
+
+Row {data-height=850}
+-------------------------------------
+
+### Gross Domestic Product (1990-2017)
+    
+```{r, echo=FALSE}
+ggplot(data=gdpFdiLabor, aes(x=year, y=gdp)) +
+  geom_line(color="#6bc76e", size = 1) +
+  geom_point(color="#6bc76e", size = 2.5) + 
+  labs(x = "Year",
+       y = "Gross Domestic Product") +
+  theme_minimal()
+```
+    
+### Foreign Direct Invesment (1990-2017)
+
+```{r, echo=FALSE}
+ggplot(data=gdpFdiLabor, aes(x=year, y=fdi)) +
+  geom_line(color="#85d0eb", size = 1) +
+  geom_point(color="#85d0eb", size = 2.5) + 
+  labs(x = "Year",
+       y = "Foreign Direct Investments") +
+  theme_minimal()
+```
+
+### Labor Force (1990-2017)
+
+```{r, echo=FALSE}
+ggplot(data=gdpFdiLabor, aes(x=year, y=laborForce)) +
+  geom_line(color="#5fabc9", size = 1) +
+  geom_point(color="#5fabc9", size = 2.5) + 
+  labs(x = "Year",
+       y = "Labord Force") + 
+  theme_minimal()
+```
